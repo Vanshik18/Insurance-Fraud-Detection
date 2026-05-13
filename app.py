@@ -37,10 +37,10 @@ base_policy = st.selectbox(
     ["Liability", "Collision", "All Perils"]
 )
 
-deductible = st.slider(
+deductible = st.number_input(
     "Deductible Amount",
     0,
-    10000000,
+    100000,
     1000
 )
 
@@ -54,7 +54,7 @@ accident_area = st.selectbox(
     ["Urban", "Rural"]
 )
 
-past_claims = st.slider(
+past_claims = st.number_input(
     "Past Number of Claims",
     0,
     25,
